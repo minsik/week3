@@ -1,0 +1,15 @@
+<h1>Rock Paper Scissors</h1>
+<%= form_tag :action=> 'roll' do %>
+<%= hidden_field_tag :user_choice, @rock %>
+<%= image_submit_tag((@rock),:height =>'200') %>
+<% end %>
+
+<%= form_tag :action=> 'roll' do %>
+<%= hidden_field_tag :user_choice, @paper %>
+<%= image_submit_tag((@paper),:height =>'200') %>
+<% end %>
+
+<%= form_tag :action=> 'roll' do %>
+<%= hidden_field_tag :user_choice, @scissors %>
+<%= image_submit_tag((@scissors),:height =>'200') %>
+<% end %>

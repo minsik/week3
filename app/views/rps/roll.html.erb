@@ -1,0 +1,10 @@
+<h1>Rock Paper Scissors</h1>
+<h2>Computer played a:</h2>
+<%= image_tag @computer,:height =>'200' %>
+
+<h2>You played a:</h2>
+<%= image_tag @user,:height =>'200' %>
+
+<h3><%= @result %></h3>
+
+<h2><%= link_to "Play again!", rps_path %></h2>
