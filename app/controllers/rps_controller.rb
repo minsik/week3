@@ -39,6 +39,3 @@ class RpsController < ApplicationController
   end
 
 end
-
-
-# <%= image_tag @option.sample+'.jpg', :height =>'200' %>

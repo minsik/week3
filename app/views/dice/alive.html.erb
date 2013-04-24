@@ -1,0 +1,10 @@
+<h3>You need to roll <%= @points %> before rolling a 7 to win</h3>
+<p>Dice 1: <%= @roll1 %></p>
+<p>Dice 2: <%= @roll2 %></p>
+<p>Total: <%= @roll2+@roll1 %></p>
+<p><%= @reply %></p>
+
+<%= form_tag :action=> @action do %>
+<%= hidden_field_tag :id, @points %>
+<%= submit_tag(@button_caption) %>
+<% end %>
